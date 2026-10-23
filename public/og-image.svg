@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="doomscroller — Doomscroll while your AI coding agent works.">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="0%" r="85%">
+      <stop offset="0%" stop-color="#b8ff3c" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#b8ff3c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b8ff3c" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#b8ff3c" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#b8ff3c" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#07080a"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g transform="translate(96, 92)">
+    <rect x="0" y="0" width="30" height="22" rx="4.5" fill="none" stroke="#b8ff3c" stroke-width="3"/>
+    <rect x="18" y="12" width="30" height="22" rx="4.5" fill="#b8ff3c"/>
+    <text x="66" y="21" fill="#e8ecf1" font-family="Space Grotesk, Inter, sans-serif" font-size="22" font-weight="600" letter-spacing="0.3">doomscroller</text>
+    <text x="230" y="21" fill="#7d8794" font-family="Inter, sans-serif" font-size="18" font-weight="500">v0.2.0</text>
+  </g>
+
+  <text x="96" y="300" fill="#f4f7fa" font-family="Space Grotesk, Inter, sans-serif" font-size="80" font-weight="700" letter-spacing="-3">Doomscroll while your</text>
+  <text x="96" y="388" fill="#b8ff3c" font-family="Space Grotesk, Inter, sans-serif" font-size="80" font-weight="700" letter-spacing="-3">AI coding agent works.</text>
+
+  <text x="96" y="454" fill="#e8ecf1" font-family="Inter, sans-serif" font-size="26">Then get pulled back the moment it finishes.</text>
+  <text x="96" y="494" fill="#9aa4b2" font-family="Inter, sans-serif" font-size="22">A small Windows utility that turns your agent's thinking time into a break.</text>
+
+  <rect x="96" y="540" width="240" height="1" fill="url(#line)"/>
+  <text x="96" y="578" fill="#9aa4b2" font-family="Inter, sans-serif" font-size="20">Windows 10/11 · Node.js 20+ · MIT licensed</text>
+  <text x="96" y="606" fill="#5d6673" font-family="Inter, sans-serif" font-size="17">Adapters: hotkey · hook · cli-wrapper · ide-activity</text>
+</svg>

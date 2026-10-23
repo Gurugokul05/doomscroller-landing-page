@@ -1,0 +1,97 @@
+/* Scope source scanning to the app itself. Without this, Tailwind's automatic
+   detection also sweeps package-lock.json and friends, inventing utilities like
+   .container / .divide-* / .animate-spin that nothing uses. */
+@import "tailwindcss" source(none);
+
+@source "../index.html";
+@source "./";
+
+@theme {
+  /* Clear Tailwind's stock colour palette first: this page only uses the tokens
+     declared below, and shipping the default set adds ~900 unused CSS variables. */
+  --color-*: initial;
+
+  --color-transparent: transparent;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-ink: #07080a;
+  --color-ink-soft: #0d1014;
+  --color-ink-raised: #14181e;
+  --color-line: #232a33;
+  --color-accent: #b8ff3c;
+  --color-accent-dim: #86c41f;
+  --color-muted: #9aa4b2;
+
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --animate-pulse-soft: pulse-soft 2.4s ease-in-out infinite;
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-ink);
+    color: #e8ecf1;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.03em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@utility grain {
+  background-image: radial-gradient(
+      circle at 15% 10%,
+      color-mix(in oklab, var(--color-accent) 12%, transparent),
+      transparent 45%
+    ),
+    radial-gradient(circle at 85% 0%, rgba(120, 140, 255, 0.08), transparent 40%);
+}
