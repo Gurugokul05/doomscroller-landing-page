@@ -130,7 +130,7 @@ export const worksWith = {
     { agent: "Claude Code", adapter: "hook", status: "Working" },
     { agent: "Command Code", adapter: "hook", status: "Working" },
     { agent: "GitHub Copilot CLI", adapter: "cli-wrapper", status: "Experimental" },
-    { agent: "Antigravity", adapter: "ide-activity", status: "Experimental" },
+    { agent: "Antigravity", adapter: "hook", status: "Working" },
     { agent: "VS Code + Copilot", adapter: "ide-activity", status: "Experimental" },
     { agent: "Other GUI IDEs (Cursor, etc.)", adapter: "ide-activity", status: "Experimental" },
     { agent: "Any foreground app", adapter: "hotkey", status: "Working" },
