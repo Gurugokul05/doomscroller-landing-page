@@ -9,7 +9,7 @@ window and opens the next site in your rotation, then pulls the agent back when 
 This repo is just the landing page. It is a static site — no backend, no API calls, no analytics.
 
 The product itself ships on npm as [`@gurugokul/doomscroller`](https://www.npmjs.com/package/@gurugokul/doomscroller).
-The page is synced to **v0.2.0**.
+The page is synced to **v0.3.1**.
 
 ---
 
@@ -98,7 +98,7 @@ The repo ships with a couple of placeholders still in it. Replace these:
 
 Everything version- and claim-related is data, not markup. When you cut a release:
 
-- Bump **`site.version`** — it drives the hero badge (`v0.2.0`), the FAQ copy and the JSON-LD
+- Bump **`site.version`** — it drives the hero badge (`v0.3.1`), the FAQ copy and the JSON-LD
   `softwareVersion`.
 - Update **`site.latestRelease`** to the new release tag URL (the hero badge links to it).
 - Re-check **`worksWith.rows`** against the product: the `status` column must stay honest.

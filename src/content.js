@@ -9,13 +9,13 @@
 
 export const site = {
   name: "doomscroller",
-  version: "0.2.0",
+  version: "0.3.1",
   url: "https://doomscroller.app",
   npmPackage: "@gurugokul/doomscroller",
   hotkey: "Ctrl+Alt+D",
   github: "https://github.com/Gurugokul05/doomscroller",
   npm: "https://www.npmjs.com/package/@gurugokul/doomscroller",
-  latestRelease: "https://github.com/Gurugokul05/doomscroller/releases/tag/v0.2.0",
+  latestRelease: "https://github.com/Gurugokul05/doomscroller/releases/tag/v0.3.1",
   changelog: "https://github.com/Gurugokul05/doomscroller/blob/main/CHANGELOG.md",
   contributing: "https://github.com/Gurugokul05/doomscroller/blob/main/CONTRIBUTING.md",
   issues: "https://github.com/Gurugokul05/doomscroller/issues",
@@ -125,7 +125,7 @@ export const worksWith = {
   columns: { agent: "Agent", adapter: "Adapter", status: "Status" },
   legend:
     "Working means implemented and covered by tests. Experimental means implemented, but not yet validated against that agent's current release.",
-  footnote: `doomscroller is early — ${site.version} is the second release.`,
+  footnote: `doomscroller is early — ${site.version} is the latest release.`,
   rows: [
     { agent: "Claude Code", adapter: "hook", status: "Working" },
     { agent: "Command Code", adapter: "hook", status: "Working" },
@@ -185,7 +185,7 @@ export const faq = {
       answer:
         "Claude Code, Command Code and the hotkey adapter for any foreground app are working — implemented and covered by tests. " +
         "GitHub Copilot CLI, Antigravity, VS Code + Copilot and other GUI IDEs are experimental: implemented, but not yet validated against those agents' current releases. " +
-        `doomscroller is early — ${site.version} is the second release.`,
+        `doomscroller is early — ${site.version} is the latest release.`,
     },
     {
       question: "How does it detect when my agent is finished?",
@@ -198,7 +198,7 @@ export const faq = {
     {
       question: "Does it work on macOS or Linux?",
       answer:
-        "Not yet. Window control is Win32-only, so 0.2.0 is Windows 10/11 only. Support on other platforms is planned, not present.",
+        `Not yet. Window control is Win32-only, so ${site.version} is Windows 10/11 only. Support on other platforms is planned, not present.`,
     },
     {
       question: "Is it free?",
